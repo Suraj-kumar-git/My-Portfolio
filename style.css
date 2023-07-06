@@ -126,49 +126,7 @@ nav.sticky .menu-btn {
   color: #fff;
 }
 
-/* home section styling */
-/* .home {
-  height: 100vh;
-  width: 100%;
-  background: url("portfolio-resources/My_Pic.png") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.home .home-content {
-  width: 90%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.home .text-one {
-  font-size: 25px;
-  color: #0E2431;
-}
-
-.home .text-two {
-  color: #0E2431;
-  font-size: 75px;
-  font-weight: 600;
-  margin-left: -3px;
-}
-
-.home .text-three {
-  font-size: 40px;
-  margin: 5px 0;
-  color: #4070f4;
-}
-
-.home .text-four {
-  font-size: 23px;
-  margin: 5px 0;
-  color: #0E2431;
-} */
+/* Home Section Styles */
 .home {
   background-color: #f2f2f2;
   padding: 60px;
@@ -183,7 +141,7 @@ nav.sticky .menu-btn {
 .text {
   flex: 1;
   text-align: left;
-  margin-right: 20px; /* Added margin to create space between text and image */
+  margin-right: 10px; /* Added margin to create space between text and image */
 }
 
 .text-wrapper {
@@ -212,25 +170,24 @@ nav.sticky .menu-btn {
   font-size: 30px;
   color: #555;
 }
-
+img {
+  max-width: 100%; /* Ensures the image fits within the container */
+  height: auto; /* Allows the image to maintain its aspect ratio */
+  border-radius: 50%;
+}
 .image {
   flex: 1;
   text-align: left; /* Changed to left alignment for consistency */
   margin-left: 20px; /* Added margin to create space between text and image */
 }
 
-img {
-  max-width: 100%; /* Ensures the image fits within the container */
-  height: auto; /* Allows the image to maintain its aspect ratio */
-  border-radius: 50%;
-}
 .home .button {
   margin: 14px 0;
 }
 
 .home .button button {
   outline: none;
-  padding: 8px 16px;
+  padding: 8px 5px;
   border-radius: 6px;
   font-size: 25px;
   font-weight: 400;
@@ -293,27 +250,26 @@ section .topic {
 
 .about {
   padding: 50px 0;
-  background-color: #f2f2f2;
-  text-align: center;
+  background-color: #f5f5f5;
 }
 
-.content {
+.about-content {
+  max-width: 900px;
   margin: 0 auto;
-  max-width: 800px;
-  padding: 0 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .about-details {
-  text-align: left;
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 0 20px;
-}
-
-.about .button {
   text-align: center;
 }
 
+.about-details p {
+  margin-bottom: 20px;
+}
 .about .button button {
   outline: none;
   padding: 8px 16px;
@@ -333,42 +289,38 @@ section .topic {
   color: #4070f4;
 }
 
+/* Educational Background Section */
 .educational-background {
-  text-align: left;
-  margin: 20px auto;
-  max-width: 1000px;
-  padding: 10px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
-h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 5px;
+.educational-background h1 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-ul {
-  list-style-type: none;
+.educational-background ul {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
-li {
+.educational-background li {
   margin-bottom: 20px;
 }
 
-.degree {
+.educational-background .degree {
   font-weight: bold;
-  font-size: 18px;
 }
 
-.institution {
-  font-size: 16px;
-  color: #666666;
+.educational-background .institution {
+  color: #555555;
 }
 
-.year {
-  font-size: 14px;
-  color: #666666;
+.educational-background .year {
+  color: #777777;
 }
 
 
@@ -413,43 +365,51 @@ li {
   color: #666666;
 }
 
-/* Projects Tab */
-
+/* Project Section Styles */
 #projects {
-  text-align: center;
   padding: 50px 0;
-  background-color: #f2f2f2;
+  background-color: #f5f5f5;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .projects-container {
   display: flex;
-  margin: 0px 70px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .project {
-  width: 45%;
-  margin-bottom: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
   padding: 20px;
-  border: 1px solid #ccc;
+  background-color: #ffffff;
   border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
-  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .project ul {
-  margin-top: 10px;
-  padding-left: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.project ul li {
+  margin-bottom: 10px;
 }
 
 .project a {
-  display: block;
+  display: inline-block;
   margin-top: 10px;
-  text-decoration: none;
-  color: #007bff;
 }
 
 /* Achievements Tab */
@@ -559,14 +519,23 @@ textarea {
   outline: none;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
+.contact .button button {
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
   cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.contact .button button:hover {
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
 }
 
 
@@ -602,7 +571,7 @@ footer .text span a:hover {
   color: #fff;
   background: #4070f4;
   padding: 7px 12px;
-  ;
+  
   font-size: 18px;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.15);
@@ -615,37 +584,6 @@ footer .text span a:hover {
     width: 85%;
   }
 }
-
-@media (max-width: 1000px) {
-  .about .about-details {
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .about .about-details .left {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .about-details .right {
-    width: 90%;
-    margin: 40px 0;
-  }
-
-  .services .boxes .box {
-    margin: 20px 0;
-    width: calc(100% / 2 - 20px);
-  }
-}
-
-@media (max-width: 900px) {
-  .about .left img {
-    height: 350px;
-    width: 350px;
-  }
-}
-
 @media (max-width: 750px) {
   nav .navbar {
     width: 90%;
@@ -696,45 +634,63 @@ footer .text span a:hover {
   .home .text-three {
     font-size: 35px;
   }
-
-  .skills .skills-details {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .skills-details .text {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-
-  .skills-details .boxes {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .services .boxes .box {
-    margin: 20px 0;
-    width: 100%;
-  }
-
-  .contact .text {
-    width: 100%;
-  }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
+  .image {
+    text-align: left;
+    margin-bottom: 0;
+    min-width: 150px;
+  }
   .home .text-two {
-    font-size: 55px;
+    font-size: 35px;
   }
 
   .home .text-three {
-    font-size: 33px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .image {
+    text-align: left;
+    margin-bottom: 0;
+    min-width: 100px;
+    margin-left: 0px;
+  }
+  .home .text-two {
+    font-size: 20px;
   }
 
+  .home .text-three {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .about-content {
+    padding: 30px 25px;
+  }
+  .educational-background{
+    padding: 15px 60px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .educational-background{
+    padding: 15px 15px;
+  }
+}
+@media (max-width: 500px) {
   .skills-details .boxes .per {
     font-size: 50px;
     color: #4070f4;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects-container {
+    @media screen and (min-width: 992px) {
+      .project {
+        width: calc(50% - 40px);
+      }
+    }
   }
 }
