@@ -44,8 +44,6 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.pointerEvents = "auto";
     body.style.overflow = "auto";
     scrollBtn.style.pointerEvents = "auto";
-
-    // Smoothly scroll to the target section
     let target = document.querySelector(this.hash);
     let headerOffset = 70; // Adjust this value to match your header's height
     let elementPosition = target.offsetTop - headerOffset;
