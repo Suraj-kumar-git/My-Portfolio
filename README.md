@@ -25,7 +25,7 @@ I'm Suraj Kumar, a passionate Full Stack Developer with expertise in Java, Sprin
 
 To view my portfolio locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/your-portfolio.git`
+1. Clone this repository: `git clone https://github.com/Suraj-kumar-git/My-Portfolio.git`
 2. Open the index.html file in your web browser.
 3. Explore the different sections and navigate through the portfolio.
 
