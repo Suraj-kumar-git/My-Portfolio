@@ -330,7 +330,6 @@ section .topic {
 
 #skills {
   text-align: center;
-  padding: 50px 0;
   background-color: #f2f2f2;
 }
 
@@ -369,7 +368,6 @@ section .topic {
 
 /* Project Section Styles */
 #projects {
-  padding: 50px 0;
   background-color: #f5f5f5;
 }
 
@@ -430,7 +428,6 @@ section .topic {
 
 #achievements {
   text-align: center;
-  padding: 80px 0;
   background-color: #f2f2f2;
 }
 
